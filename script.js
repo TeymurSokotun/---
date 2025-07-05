@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // --- Модуль для Галереи Модов ---
+    // --- Модуль для Галереї Модів ---
     const modGridContainer = document.getElementById('mod-grid-container');
     const modDetailPage = document.getElementById('mod-detail-page');
     const modsGallerySection = document.getElementById('mods-gallery-section');
@@ -8,119 +8,119 @@ document.addEventListener('DOMContentLoaded', () => {
     const modVersionFilter = document.getElementById('mod-version-filter');
     const modCategoryFilter = document.getElementById('mod-category-filter');
 
-    // Sample Mod Data (имитация данных с сервера)
+    // Sample Mod Data (імітація даних з сервера)
     const modsData = [
         {
             id: 'journeymap',
             title: 'JourneyMap',
-            image: 'https://via.placeholder.com/400x200?text=JourneyMap_Thumb', // Замените на реальное изображение
-            description: 'Один из лучших модов для карты в Minecraft. Позволяет просматривать мир в реальном времени, ставить метки, и многое другое.',
-            fullDescription: 'JourneyMap - это мод для Minecraft, который отображает ваш мир в реальном времени во время исследования. Вы можете просматривать карту в веб-браузере или в игре, на миникарте или в полноэкранном режиме. Мод также предлагает множество полезных функций, таких как установка путевых точек, отображение мобов и пещер, а также возможность сохранять и загружать карты.',
+            image: 'images/mods/journeymap_thumb.jpg', // Замінено на передбачуване зображення
+            description: 'Один з найкращих модів для карти в Minecraft. Дозволяє переглядати світ у реальному часі, ставити мітки та багато іншого.',
+            fullDescription: 'JourneyMap - це мод для Minecraft, який відображає ваш світ у реальному часі під час дослідження. Ви можете переглядати карту у веб-браузері або в грі, на міні-карті або у повноекранному режимі. Мод також пропонує безліч корисних функцій, таких як встановлення шляхових точок, відображення мобів і печер, а також можливість зберігати та завантажувати карти.',
             version: '1.20.1',
-            category: 'Исследование',
+            category: 'Дослідження',
             // !!! ВАЖНО: ЗАМЕНИТЕ ЭТУ ССЫЛКУ НА РЕАЛЬНЫЙ ПУТЬ К ВАШЕМУ .JAR ФАЙЛУ МОДА !!!
             downloadLink: 'https://example.com/downloads/journeymap-1.20.1.jar',
             screenshots: [
-                'https://via.placeholder.com/600x350?text=JM_Screenshot1', // Замените на реальное изображение
-                'https://via.placeholder.com/600x350?text=JM_Screenshot2',
-                'https://via.placeholder.com/600x350?text=JM_Screenshot3'
+                'images/mods/journeymap_screenshot1.jpg', // Замінено на передбачувані зображення
+                'images/mods/journeymap_screenshot2.jpg',
+                'images/mods/journeymap_screenshot3.jpg'
             ]
         },
         {
             id: 'create',
             title: 'Create Mod',
-            image: 'https://via.placeholder.com/400x200?text=Create_Thumb', // Замените на реальное изображение
-            description: 'Мод на автоматизацию и создание сложных механизмов с уникальной физикой.',
-            fullDescription: 'Мод Create добавляет в Minecraft множество инструментов и блоков для создания сложных автоматизированных систем и машин. Он фокусируется на кинетической энергии, позволяя строить механизмы, такие как конвейеры, подъемники, автоматические фермы, и многое другое, с использованием шестеренок, двигателей и других интерактивных блоков. Create предлагает уникальный подход к автоматизации, отличающийся от традиционных технических модов.',
+            image: 'images/mods/create_thumb.png', // Замінено на передбачуване зображення
+            description: 'Мод на автоматизацію та створення складних механізмів з унікальною фізикою.',
+            fullDescription: 'Мод Create додає в Minecraft безліч інструментів і блоків для створення складних автоматизованих систем і машин. Він фокусується на кінетичній енергії, дозволяючи будувати механізми, такі як конвеєри, підйомники, автоматичні ферми, і багато іншого, з використанням шестерень, двигунів та інших інтерактивних блоків. Create пропонує унікальний підхід до автоматизації, що відрізняється від традиційних технічних модів.',
             version: '1.20.1',
-            category: 'Технологии',
+            category: 'Технології',
             // !!! ВАЖНО: ЗАМЕНИТЕ ЭТУ ССЫЛКУ НА РЕАЛЬНЫЙ ПУТЬ К ВАШЕМУ .JAR ФАЙЛУ МОДА !!!
             downloadLink: 'https://example.com/downloads/create-mod-1.20.1.jar',
             screenshots: [
-                'https://via.placeholder.com/600x350?text=Create_Screenshot1', // Замените на реальное изображение
-                'https://via.placeholder.com/600x350?text=Create_Screenshot2',
-                'https://via.placeholder.com/600x350?text=Create_Screenshot3'
+                'images/mods/create_screenshot1.png', // Замінено на передбачувані зображення
+                'images/mods/create_screenshot2.png',
+                'images/mods/create_screenshot3.png'
             ]
         },
         {
             id: 'farmers-delight',
             title: 'Farmer\'s Delight',
-            image: 'https://via.placeholder.com/400x200?text=FarmersDelight_Thumb', // Замените на реальное изображение
-            description: 'Расширяет возможности фермерства и кулинарии в Minecraft, добавляя новые культуры и блюда.',
-            fullDescription: 'Farmer\'s Delight - это мод, который значительно улучшает аспекты фермерства и кулинарии в Minecraft. Он добавляет множество новых культур, рецептов, инструментов и блоков, позволяя игрокам создавать более разнообразные и сложные блюда. Мод также включает в себя новые способы хранения продуктов и приготовления пищи, делая фермерство более увлекательным и полезным занятием.',
+            image: 'images/mods/farmersdelight_thumb.jpg', // Замінено на передбачуване зображення
+            description: 'Розширює можливості фермерства та кулінарії в Minecraft, додаючи нові культури та страви.',
+            fullDescription: 'Farmer\'s Delight - це мод, який значно покращує аспекти фермерства та кулінарії в Minecraft. Він додає безліч нових культур, рецептів, інструментів і блоків, дозволяючи гравцям створювати більш різноманітні та складні страви. Мод також включає в себе нові способи зберігання продуктів і приготування їжі, роблячи фермерство більш захоплюючим і корисним заняттям.',
             version: '1.19.2',
-            category: 'Выживание',
+            category: 'Виживання',
             // !!! ВАЖНО: ЗАМЕНИТЕ ЭТУ ССЫЛКУ НА РЕАЛЬНЫЙ ПУТЬ К ВАШЕМУ .JAR ФАЙЛУ МОДА !!!
             downloadLink: 'https://example.com/downloads/farmers-delight-1.19.2.jar',
             screenshots: [
-                'https://via.placeholder.com/600x350?text=FD_Screenshot1', // Замените на реальное изображение
-                'https://via.placeholder.com/600x350?text=FD_Screenshot2',
-                'https://via.placeholder.com/600x350?text=FD_Screenshot3'
+                'images/mods/farmersdelight_screenshot1.jpg', // Замінено на передбачувані зображення
+                'images/mods/farmersdelight_screenshot2.jpg',
+                'images/mods/farmersdelight_screenshot3.jpg'
             ]
         },
         {
             id: 'comfort',
             title: 'Comforts',
-            image: 'https://via.placeholder.com/400x200?text=Comforts_Thumb', // Замените на реальное изображение
-            description: 'Добавляет спальные мешки, которые можно использовать в любом месте.',
-            fullDescription: 'Мод Comforts вводит в игру спальные мешки, которые работают как обычные кровати, но имеют ряд преимуществ: их можно разместить и использовать где угодно (даже в Незере или Энде), они не устанавливают точку возрождения и могут быть легко подобраны. Это идеальное решение для путешественников и исследователей, которым нужен быстрый способ пропустить ночь без потери места спавна.',
+            image: 'images/mods/comforts_thumb.png', // Замінено на передбачуване зображення
+            description: 'Додає спальні мішки, які можна використовувати будь-де.',
+            fullDescription: 'Мод Comforts вводить в гру спальні мішки, які працюють як звичайні ліжка, але мають ряд переваг: їх можна розмістити і використовувати де завгодно (навіть у Незері або Енді), вони не встановлюють точку відродження і можуть бути легко підібрані. Це ідеальне рішення для мандрівників та дослідників, яким потрібен швидкий спосіб пропустити ніч без втрати місця спавну.',
             version: '1.20.1',
-            category: 'Выживание',
+            category: 'Виживання',
             // !!! ВАЖНО: ЗАМЕНИТЕ ЭТУ ССЫЛКУ НА РЕАЛЬНЫЙ ПУТЬ К ВАШЕМУ .JAR ФАЙЛУ МОДА !!!
             downloadLink: 'https://example.com/downloads/comforts-1.20.1.jar',
             screenshots: [
-                'https://via.placeholder.com/600x350?text=Comforts_Screenshot1', // Замените на реальное изображение
-                'https://via.placeholder.com/600x350?text=Comforts_Screenshot2'
+                'images/mods/comforts_screenshot1.png', // Замінено на передбачувані зображення
+                'images/mods/comforts_screenshot2.png'
             ]
         },
         {
             id: 'decorative-blocks',
             title: 'Decorative Blocks',
-            image: 'https://via.placeholder.com/400x200?text=DecorativeBlocks_Thumb', // Замените на реальное изображение
-            description: 'Множество новых декоративных блоков для строительства и украшения.',
-            fullDescription: 'Мод Decorative Blocks добавляет в Minecraft широкий ассортимент новых блоков, предназначенных исключительно для декоративных целей. Это включает в себя различные виды бревен, столы, стулья, заборы, решетки, лампы и многое другое, что позволяет игрокам создавать более детализированные и эстетически приятные постройки. Мод идеально подходит для тех, кто любит украшать свои базы и города.',
+            image: 'images/mods/decorativeblocks_thumb.png', // Замінено на передбачуване зображення
+            description: 'Безліч нових декоративних блоків для будівництва та прикраси.',
+            fullDescription: 'Мод Decorative Blocks додає в Minecraft широкий асортимент нових блоків, призначених виключно для декоративних цілей. Це включає в себе різні види колод, столи, стільці, паркани, решітки, лампи та багато іншого, що дозволяє гравцям створювати більш деталізовані та естетично приємні споруди. Мод ідеально підходить для тих, хто любить прикрашати свої бази та міста.',
             version: '1.18.2',
             category: 'Декор',
             // !!! ВАЖНО: ЗАМЕНИТЕ ЭТУ ССЫЛКУ НА РЕАЛЬНЫЙ ПУТЬ К ВАШЕМУ .JAR ФАЙЛУ МОДА !!!
             downloadLink: 'https://example.com/downloads/decorative-blocks-1.18.2.jar',
             screenshots: [
-                'https://via.placeholder.com/600x350?text=DB_Screenshot1', // Замените на реальное изображение
-                'https://via.placeholder.com/600x350?text=DB_Screenshot2'
+                'images/mods/decorativeblocks_screenshot1.png', // Замінено на передбачувані зображення
+                'images/mods/decorativeblocks_screenshot2.png'
             ]
         },
         {
             id: 'ice-and-fire',
             title: 'Ice and Fire: Dragons in a new world',
-            image: 'https://via.placeholder.com/400x200?text=IceAndFire_Thumb', // Замените на реальное изображение
-            description: 'Добавляет драконов и других мифических существ в мир Minecraft.',
-            fullDescription: 'Ice and Fire - это эпический мод, который приносит в мир Minecraft могущественных драконов и других фантастических существ. Игроки могут столкнуться с ледяными и огненными драконами, грифонами, гидрами, химерами и многими другими. Мод позволяет охотиться на этих существ, приручать их, использовать их части для создания брони и оружия, или даже летать на драконах. Это значительно расширяет исследование и приключения в игре.',
+            image: 'images/mods/iceandfire_thumb.jpg', // Замінено на передбачуване зображення
+            description: 'Додає драконів та інших міфічних істот у світ Minecraft.',
+            fullDescription: 'Ice and Fire - це епічний мод, який приносить у світ Minecraft могутніх драконів та інших фантастичних істот. Гравці можуть зіткнутися з крижаними та вогняними драконами, грифонами, гідрами, химерами та багатьма іншими. Мод дозволяє полювати на цих істот, приручати їх, використовувати їхні частини для створення броні та зброї, або навіть літати на драконах. Це значно розширює дослідження та пригоди в грі.',
             version: '1.16.5',
-            category: 'Исследование',
+            category: 'Дослідження',
             // !!! ВАЖНО: ЗАМЕНИТЕ ЭТУ ССЫЛКУ НА РЕАЛЬНЫЙ ПУТЬ К ВАШЕМУ .JAR ФАЙЛУ МОДА !!!
             downloadLink: 'https://example.com/downloads/ice-and-fire-1.16.5.jar',
             screenshots: [
-                'https://via.placeholder.com/600x350?text=IAF_Screenshot1', // Замените на реальное изображение
-                'https://via.placeholder.com/600x350?text=IAF_Screenshot2',
-                'https://via.placeholder.com/600x350?text=IAF_Screenshot3'
+                'images/mods/iceandfire_screenshot1.jpg', // Замінено на передбачувані зображення
+                'images/mods/iceandfire_screenshot2.jpg',
+                'images/mods/iceandfire_screenshot3.jpg'
             ]
         }
     ];
 
-    let currentMods = [...modsData]; // Массив для текущего отображения (для фильтрации)
+    let currentMods = [...modsData]; // Масив для поточного відображення (для фільтрації)
 
     function renderMods(modsToRender) {
         if (!modGridContainer) return;
         modGridContainer.innerHTML = '';
 
         if (modsToRender.length === 0) {
-            modGridContainer.innerHTML = '<p class="no-results">Моды не найдены.</p>';
+            modGridContainer.innerHTML = '<p class="no-results">Моди не знайдено.</p>';
             return;
         }
 
         modsToRender.forEach(mod => {
             const modCard = document.createElement('div');
             modCard.classList.add('mod-card');
-            modCard.dataset.id = mod.id; // Для связи с детальной страницей
+            modCard.dataset.id = mod.id; // Для зв'язку з детальною сторінкою
 
             modCard.innerHTML = `
                 <img src="${mod.image}" alt="${mod.title}">
@@ -128,8 +128,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h3>${mod.title}</h3>
                     <p>${mod.description}</p>
                     <div class="mod-card-meta">
-                        <span>Версия: ${mod.version}</span>
-                        <span>Категория: ${mod.category}</span>
+                        <span>Версія: ${mod.version}</span>
+                        <span>Категорія: ${mod.category}</span>
                     </div>
                 </div>
             `;
@@ -144,8 +144,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!mod) return;
 
         if (modDetailPage && modsGallerySection) {
-            modsGallerySection.style.display = 'none'; // Скрываем сетку модов
-            modDetailPage.style.display = 'block';    // Показываем детальную страницу
+            modsGallerySection.style.display = 'none'; // Приховуємо сітку модів
+            modDetailPage.style.display = 'block';    // Показуємо детальну сторінку
 
             document.getElementById('mod-detail-title').textContent = mod.title;
             document.getElementById('mod-detail-image').src = mod.image;
@@ -156,14 +156,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const downloadBtn = document.getElementById('detail-download');
             downloadBtn.href = mod.downloadLink;
-            downloadBtn.download = mod.title.replace(/[^a-z0-9]/gi, '_') + '_' + mod.version + '.jar'; // Динамическое имя файла для скачивания
+            downloadBtn.download = mod.title.replace(/[^a-z0-9]/gi, '_') + '_' + mod.version + '.jar'; // Динамічне ім'я файлу для завантаження
 
             const screenshotsContainer = document.getElementById('mod-detail-screenshots');
-            screenshotsContainer.innerHTML = ''; // Очищаем старые скриншоты
+            screenshotsContainer.innerHTML = ''; // Очищаємо старі скріншоти
             mod.screenshots.forEach(screenshotUrl => {
                 const img = document.createElement('img');
                 img.src = screenshotUrl;
-                img.alt = `Скриншот мода ${mod.title}`;
+                img.alt = `Скріншот моду ${mod.title}`;
                 screenshotsContainer.appendChild(img);
             });
         }
@@ -185,8 +185,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         currentMods = modsData.filter(mod => {
             const matchesSearch = mod.title.toLowerCase().includes(searchTerm) ||
-                                  mod.description.toLowerCase().includes(searchTerm) ||
-                                  mod.fullDescription.toLowerCase().includes(searchTerm);
+                                 mod.description.toLowerCase().includes(searchTerm) ||
+                                 mod.fullDescription.toLowerCase().includes(searchTerm);
 
             const matchesVersion = selectedVersion === '' || mod.version === selectedVersion;
             const matchesCategory = selectedCategory === '' || mod.category === selectedCategory;
@@ -207,101 +207,101 @@ document.addEventListener('DOMContentLoaded', () => {
         modCategoryFilter.addEventListener('change', applyModFilters);
     }
 
-    // Инициализация: если мы на странице mods.html, отображаем моды
+    // Ініціалізація: якщо ми на сторінці mods.html, відображаємо моди
     if (window.location.pathname.includes('mods.html')) {
-        renderMods(modsData); // Изначально показываем все моды
+        renderMods(modsData); // Спочатку показуємо всі моди
     }
 
-    // --- Модуль для Гайдов ---
+    // --- Модуль для Гайдів ---
     const guideGridContainer = document.getElementById('guide-grid-container');
     const guideDetailPage = document.getElementById('guide-detail-page');
     const guidesGallerySection = document.getElementById('guides-gallery-section');
     const backToGuidesBtn = document.getElementById('back-to-guides');
 
-    // Sample Guide Data (имитация данных с сервера)
+    // Sample Guide Data (імітація даних з сервера)
     const guidesData = [
         {
             id: 'starting-survival',
-            title: 'Как начать выживание в Minecraft',
-            image: 'https://i.imgur.com/example_guide1.png', // Замените на реальное изображение
-            summary: 'Пошаговый гайд для новичков по первым дням в мире Minecraft.',
+            title: 'Як почати виживання в Minecraft',
+            image: 'images/guides/starting_survival.png', // Замінено на передбачуване зображення
+            summary: 'Покроковий гайд для новачків по перших днях у світі Minecraft.',
             fullContent: `
-                <h3>День 1: Основы выживания</h3>
-                <p>Ваша первая задача - добыть дерево. Найдите ближайшее дерево, удерживайте левую кнопку мыши, чтобы срубить его. Соберите около 10-15 блоков дерева. Откройте инвентарь (клавиша 'E'), перетащите дерево в окно крафта, чтобы получить доски.</p>
-                <p>Из досок сделайте верстак (4 доски в квадрате 2x2). Установите верстак на землю и используйте его, чтобы скрафтить деревянные инструменты: кирку, топор, лопату и меч. Кирка нужна для добычи камня, топор - для дерева, лопата - для земли, меч - для защиты.</p>
-                <h3>Поиск укрытия</h3>
-                <p>До наступления ночи вам нужно найти или построить укрытие. Это может быть небольшая землянка, вырытая в склоне горы, или простая коробка из дерева. Главное - запечатать вход и быть в безопасности от монстров.</p>
+                <h3>День 1: Основи виживання</h3>
+                <p>Ваша перша задача - добути дерево. Знайдіть найближче дерево, утримуйте ліву кнопку миші, щоб зрубати його. Зберіть близько 10-15 блоків дерева. Відкрийте інвентар (клавіша 'E'), перетягніть дерево у вікно крафту, щоб отримати дошки.</p>
+                <p>З дощок зробіть верстак (4 дошки в квадраті 2x2). Встановіть верстак на землю і використовуйте його, щоб скрафтити дерев'яні інструменти: кирку, сокиру, лопату і меч. Кирка потрібна для видобутку каменю, сокира - для дерева, лопата - для землі, меч - для захисту.</p>
+                <h3>Пошук укриття</h3>
+                <p>До настання ночі вам потрібно знайти або побудувати укриття. Це може бути невелика землянка, вирита в схилі гори, або проста коробка з дерева. Головне - запечатати вхід і бути в безпеці від монстрів.</p>
                 <ul>
-                    <li><strong>Убедитесь, что у вас есть:</strong></li>
+                    <li><strong>Переконайтеся, що у вас є:</strong></li>
                     <li>Верстак</li>
-                    <li>Деревянные инструменты</li>
-                    <li>Небольшое укрытие</li>
-                    <li>Пара факелов (крафтятся из угля/древесного угля и палки)</li>
+                    <li>Дерев'яні інструменти</li>
+                    <li>Невелике укриття</li>
+                    <li>Пара смолоскипів (крафтяться з вугілля/деревного вугілля та палиці)</li>
                 </ul>
-                <h3>Ночь и добыча</h3>
-                <p>В первую ночь лучше оставаться в укрытии. Если у вас есть деревянная кирка, начните копать вниз (прямо под собой - не лучший вариант, лучше ступеньками) или в сторону, чтобы найти камень и уголь. Камень позволит вам создать каменные инструменты, которые намного прочнее деревянных. Уголь нужен для факелов и плавки.</p>
-                <p>Когда вы найдете уголь, скрафтите факелы (уголь сверху, палка снизу на верстаке). Факелы осветят ваше убежище и предотвратят появление мобов.</p>
-                <h3>Дальнейшее развитие</h3>
-                <p>После первой ночи вы можете начать расширять свое убежище, исследовать мир, искать еду и новые ресурсы. Помните о важности кровати, чтобы установить точку возрождения и пропускать ночи.</p>
+                <h3>Ніч і видобуток</h3>
+                <p>У першу ніч краще залишатися в укритті. Якщо у вас є дерев'яна кирка, почніть копати вниз (прямо під собою - не найкращий варіант, краще сходинками) або вбік, щоб знайти камінь і вугілля. Камінь дозволить вам створити кам'яні інструменти, які набагато міцніші за дерев'яні. Вугілля потрібне для смолоскипів і плавки.</p>
+                <p>Коли ви знайдете вугілля, скрафтіть смолоскипи (вугілля зверху, палиця знизу на верстаку). Смолоскипи освітлять ваше притулок і запобігнуть появі мобів.</p>
+                <h3>Подальший розвиток</h3>
+                <p>Після першої ночі ви можете почати розширювати своє укриття, досліджувати світ, шукати їжу та нові ресурси. Пам'ятайте про важливість ліжка, щоб встановити точку відродження та пропускати ночі.</p>
             `
         },
         {
             id: 'getting-diamonds',
-            title: 'Как найти алмазы в Minecraft',
-            image: 'https://i.imgur.com/example_guide2.png', // Замените на реальное изображение
-            summary: 'Подробное руководство по эффективному поиску самых ценных ресурсов.',
+            title: 'Як знайти алмази в Minecraft',
+            image: 'images/guides/getting_diamonds.png', // Замінено на передбачуване зображення
+            summary: 'Детальний посібник з ефективного пошуку найцінніших ресурсів.',
             fullContent: `
-                <h3>Где искать алмазы?</h3>
-                <p>Алмазы в Minecraft наиболее часто встречаются на глубоких уровнях под землей. Наилучшие слои для поиска алмазов: Y-уровень от **-58 до -59** в версии 1.18+ (ниже 0). До версии 1.18 это были слои 11-12.</p>
-                <p>Чтобы узнать ваш текущий Y-уровень, нажмите F3 (или Fn+F3 на некоторых ноутбуках) и найдите строку с координатами (X, Y, Z). Вам нужен показатель Y.</p>
-                <h3>Подготовка к добыче</h3>
+                <h3>Де шукати алмази?</h3>
+                <p>Алмази в Minecraft найчастіше зустрічаються на глибоких рівнях під землею. Найкращі шари для пошуку алмазів: Y-рівень від <strong>-58 до -59</strong> у версії 1.18+ (нижче 0). До версії 1.18 це були шари 11-12.</p>
+                <p>Щоб дізнатися ваш поточний Y-рівень, натисніть F3 (або Fn+F3 на деяких ноутбуках) і знайдіть рядок з координатами (X, Y, Z). Вам потрібен показник Y.</p>
+                <h3>Підготовка до видобутку</h3>
                 <ul>
-                    <li><strong>Железная кирка или лучше:</strong> Алмазы можно добыть только железной, алмазной или незеритовой киркой.</li>
-                    <li><strong>Факелы:</strong> Много факелов для освещения пещер и шахт, предотвращения появления мобов.</li>
-                    <li><strong>Еда:</strong> Достаточно еды, чтобы восстанавливать голод.</li>
-                    <li><strong>Ведро воды:</strong> Для защиты от лавы и создания обсидиана.</li>
-                    <li><strong>Броня:</strong> Защита от мобов.</li>
-                    <li><strong>Оружие:</strong> Для борьбы с врагами.</li>
+                    <li><strong>Залізна кирка або краще:</strong> Алмази можна добути лише залізною, алмазною або незерітовою киркою.</li>
+                    <li><strong>Смолоскипи:</strong> Багато смолоскипів для освітлення печер і шахт, запобігання появі мобів.</li>
+                    <li><strong>Їжа:</strong> Достатньо їжі, щоб відновлювати голод.</li>
+                    <li><strong>Відро води:</strong> Для захисту від лави та створення обсидіану.</li>
+                    <li><strong>Броня:</strong> Захист від мобів.</li>
+                    <li><strong>Зброя:</strong> Для боротьби з ворогами.</li>
                 </ul>
-                <h3>Эффективные методы добычи</h3>
-                <p>Наиболее популярные и эффективные методы добычи алмазов:</p>
+                <h3>Ефективні методи видобутку</h3>
+                <p>Найбільш популярні та ефективні методи видобутку алмазів:</p>
                 <ol>
-                    <li><strong>Стрип-майнинг (Strip Mining):</strong> Копайте длинные прямые тоннели на оптимальном уровне, оставляя между ними 2-3 блока. Это позволяет охватить большую площадь.</li>
-                    <li><strong>Кейв-майнинг (Cave Mining):</strong> Исследование природных пещер. Это более рискованный, но потенциально быстрый способ найти алмазы, так как они часто открыты в стенах пещер. Будьте осторожны с лавой и мобами.</li>
-                    <li><strong>Тоннели 2x1:</strong> Копайте тоннели 2 блока в высоту и 1 блок в ширину. Это экономит кирки и время.</li>
+                    <li><strong>Стрип-майнінг (Strip Mining):</strong> Копайте довгі прямі тунелі на оптимальному рівні, залишаючи між ними 2-3 блоки. Це дозволяє охопити велику площу.</li>
+                    <li><strong>Кейв-майнінг (Cave Mining):</strong> Дослідження природних печер. Це більш ризикований, але потенційно швидкий спосіб знайти алмази, оскільки вони часто відкриті в стінах печер. Будьте обережні з лавою та мобами.</li>
+                    <li><strong>Тунелі 2x1:</strong> Копайте тунелі 2 блоки заввишки та 1 блок завширшки. Це економить кирки та час.</li>
                 </ol>
-                <h3>Советы по безопасности</h3>
-                <p>Всегда будьте осторожны с лавой! Алмазы часто встречаются рядом с ней. При попадании в лаву, ведро воды поможет вам быстро выбраться, превратив лаву в обсидиан. Всегда держите факелы под рукой, чтобы избежать появления криперов и других враждебных мобов.</p>
+                <h3>Поради з безпеки</h3>
+                <p>Завжди будьте обережні з лавою! Алмази часто зустрічаються поруч із нею. При попаданні в лаву, відро води допоможе вам швидко вибратися, перетворивши лаву на обсидіан. Завжди тримайте смолоскипи під рукою, щоб уникнути появи кріперів та інших ворожих мобів.</p>
             `
         },
         {
             id: 'nether-survival',
-            title: 'Выживание в Нижнем Мире',
-            image: 'https://i.imgur.com/example_guide3.png', // Замените на реальное изображение
-            summary: 'Руководство по выживанию и исследованию опасного измерения.',
+            title: 'Виживання в Нижньому Світі',
+            image: 'images/guides/nether_survival.png', // Замінено на передбачуване зображення
+            summary: 'Посібник з виживання та дослідження небезпечного виміру.',
             fullContent: `
-                <h3>Вход в Нижний Мир</h3>
-                <p>Для входа в Нижний Мир (The Nether) вам понадобится портал. Он строится из минимум 10 блоков обсидиана (рамка 4x5, углы можно пропускать). Активируется портал огнивом, которым нужно кликнуть по одному из внутренних блоков рамки.</p>
-                <p><strong>Осторожно!</strong> Точка появления в Нижнем Мире может быть опасной. Сразу после входа установите портал в безопасном месте и подумайте о его защите от гастов.</p>
-                <h3>Ресурсы Нижнего Мира</h3>
-                <p>В Нижнем Мире можно найти уникальные ресурсы:</p>
+                <h3>Вхід у Нижній Світ</h3>
+                <p>Для входу в Нижній Світ (The Nether) вам знадобиться портал. Він будується з мінімум 10 блоків обсидіану (рамка 4x5, кути можна пропускати). Активується портал кресалом, яким потрібно клікнути по одному з внутрішніх блоків рамки.</p>
+                <p><strong>Обережно!</strong> Точка появи в Нижньому Світі може бути небезпечною. Відразу після входу встановіть портал у безпечному місці та подумайте про його захист від гастів.</p>
+                <h3>Ресурси Нижнього Світу</h3>
+                <p>У Нижньому Світі можна знайти унікальні ресурси:</p>
                 <ul>
-                    <li><strong>Незеррак (Netherrack):</strong> Основной блок, легко добывается.</li>
-                    <li><strong>Кварцевая руда (Nether Quartz Ore):</strong> Источник кварца для опыта и крафта компараторов.</li>
-                    <li><strong>Обломки древности (Ancient Debris):</strong> Редчайший ресурс для создания незеритовых слитков. Добывается только алмазной киркой или лучше, плавится в печи.</li>
-                    <li><strong>Магма-блоки (Magma Blocks):</strong> Наносят урон при контакте, но их можно добыть.</li>
-                    <li><strong>Базальт (Basalt), Чернит (Blackstone):</strong> Новые блоки для строительства.</li>
-                    <li><strong>Души песка (Soul Sand) и Почва душ (Soul Soil):</strong> Замедляющие блоки, на них растут грибы, используются для спавнеров визеров.</li>
+                    <li><strong>Незеррак (Netherrack):</strong> Основний блок, легко добувається.</li>
+                    <li><strong>Кварцова руда (Nether Quartz Ore):</strong> Джерело кварцу для досвіду та крафту компараторів.</li>
+                    <li><strong>Уламки давнини (Ancient Debris):</strong> Найрідкісніший ресурс для створення незерітових злитків. Добувається лише алмазною киркою або краще, плавиться в печі.</li>
+                    <li><strong>Магма-блоки (Magma Blocks):</strong> Наносять шкоду при контакті, але їх можна добути.</li>
+                    <li><strong>Базальт (Basalt), Чорнокамінь (Blackstone):</strong> Нові блоки для будівництва.</li>
+                    <li><strong>Пісок душ (Soul Sand) та Ґрунт душ (Soul Soil):</strong> Уповільнюючі блоки, на них ростуть гриби, використовуються для спавнерів візерів.</li>
                 </ul>
-                <h3>Опасности Нижнего Мира</h3>
-                <p>Нижний Мир полон опасностей:</p>
+                <h3>Небезпеки Нижнього Світу</h3>
+                <p>Нижній Світ сповнений небезпек:</p>
                 <ul>
-                    <li><strong>Лава:</strong> Океаны лавы повсюду. Всегда будьте готовы построить мост или использовать ведро воды (если вы вышли из портала в верхнем мире и захватили его с собой).</li>
-                    <li><strong>Мобы:</strong> Гасты (стреляют огненными шарами), свинозомби/пиглины (агрессивны, если их атаковать или брать золото), блейзы (летают и стреляют огнем), иссушители-скелеты (накладывают иссушение, дропают черепа для Визера), страйдеры (дружелюбны, по ним можно путешествовать по лаве).</li>
-                    <li><strong>Высота:</strong> Падение с высоты часто смертельно.</li>
+                    <li><strong>Лава:</strong> Океани лави всюди. Завжди будьте готові побудувати міст або використовувати відро води (якщо ви вийшли з порталу у верхньому світі та захопили його з собою).</li>
+                    <li><strong>Моби:</strong> Гасти (стріляють вогняними кулями), свинозомбі/пігліни (агресивні, якщо їх атакувати або брати золото), блейзи (літають і стріляють вогнем), скелети-візери (накладають висушення, дропають черепи для Візера), страйдери (дружелюбні, по них можна подорожувати по лаві).</li>
+                    <li><strong>Висота:</strong> Падіння з висоти часто смертельне.</li>
                 </ul>
-                <h3>Исследование Крепостей Нижнего Мира</h3>
-                <p>Крепости (Nether Fortresses) - это структуры, где можно найти ценные ресурсы и спавнеры блейзов. Вам понадобятся стержни блейза для создания Ока Эндера и порошок блейза для зелий. Остерегайтесь иссушителей-скелетов.</p>
+                <h3>Дослідження Фортець Нижнього Світу</h3>
+                <p>Фортеці (Nether Fortresses) - це структури, де можна знайти цінні ресурси та спавнери блейзів. Вам знадобляться стрижні блейза для створення Ока Ендера та порошок блейза для зілля. Остерігайтеся скелетів-візерів.</p>
             `
         }
     ];
@@ -311,7 +311,7 @@ document.addEventListener('DOMContentLoaded', () => {
         guideGridContainer.innerHTML = '';
 
         if (guidesToRender.length === 0) {
-            guideGridContainer.innerHTML = '<p class="no-results">Гайды не найдены.</p>';
+            guideGridContainer.innerHTML = '<p class="no-results">Гайдів не знайдено.</p>';
             return;
         }
 
@@ -358,7 +358,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Инициализация: если мы на странице guides.html, отображаем гайды
+    // Ініціалізація: якщо ми на сторінці guides.html, відображаємо гайди
     if (window.location.pathname.includes('guides.html')) {
         renderGuides(guidesData);
     }
@@ -371,14 +371,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const craftSearchInput = document.getElementById('craft-search');
     const craftCategoryFilter = document.getElementById('craft-category-filter');
 
-    // Sample Crafting Data (имитация данных с сервера)
+    // Sample Crafting Data (імітація даних з сервера)
     const craftingRecipesData = [
         {
             id: 'wooden_pickaxe',
-            title: 'Деревянная кирка',
-            image: 'https://via.placeholder.com/64x64?text=Wooden+Pickaxe', // Placeholder
-            category: 'Инструменты',
-            description: 'Ваш первый инструмент для добычи камня.',
+            title: 'Дерев\'яна кирка',
+            image: 'a78f6c2337e234addda44ceecfcd576b.jpg', // Використовуємо надане зображення
+            category: 'Інструменти',
+            description: 'Ваш перший інструмент для видобутку каменю.',
             ingredients: [
                 'Oak_Planks.png', 'Oak_Planks.png', 'Oak_Planks.png',
                 null, 'Палка_JE1_BE1.webp', null,
@@ -388,9 +388,9 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 'crafting_table',
             title: 'Верстак',
-            image: 'https://via.placeholder.com/64x64?text=Crafting+Table', // Placeholder
+            image: 'Farm.webp', // Використовуємо надане зображення
             category: 'Блоки',
-            description: 'Основной блок для создания большинства предметов.',
+            description: 'Основний блок для створення більшості предметів.',
             ingredients: [
                 'Oak_Planks.png', 'Oak_Planks.png', null,
                 'Oak_Planks.png', 'Oak_Planks.png', null,
@@ -399,10 +399,10 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 'furnace',
-            title: 'Печь',
-            image: 'https://via.placeholder.com/64x64?text=Furnace', // Placeholder
+            title: 'Піч',
+            image: '3F3F_JE4.webp', // Використовуємо надане зображення
             category: 'Блоки',
-            description: 'Используется для переплавки руды и готовки еды.',
+            description: 'Використовується для переплавки руди та готування їжі.',
             ingredients: [
                 '3F3F3F3F_JE3_BE2.webp', '3F3F3F3F_JE3_BE2.webp', '3F3F3F3F_JE3_BE2.webp',
                 '3F3F3F3F_JE3_BE2.webp', null, '3F3F3F3F_JE3_BE2.webp',
@@ -411,10 +411,10 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 'stone_sword',
-            title: 'Каменный меч',
-            image: 'https://via.placeholder.com/64x64?text=Stone+Sword', // Placeholder
-            category: 'Оружие',
-            description: 'Улучшенное оружие для защиты от монстров.',
+            title: 'Кам\'яний меч',
+            image: 'dod.webp', // Використовуємо надане зображення
+            category: 'Зброя',
+            description: 'Покращена зброя для захисту від монстрів.',
             ingredients: [
                 null, '3F3F3F3F_JE3_BE2.webp', null,
                 null, '3F3F3F3F_JE3_BE2.webp', null,
@@ -423,10 +423,10 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 'chest',
-            title: 'Сундук',
-            image: 'https://via.placeholder.com/64x64?text=Chest', // Placeholder
+            title: 'Скриня',
+            image: 'foni-papik-pro-1wzc-p-kartinki-sunduk-mainkraft-na-prozrachnom-f-2.png', // Зображення для скрині не надано
             category: 'Блоки',
-            description: 'Для хранения ваших предметов.',
+            description: 'Для зберігання ваших предметів.',
             ingredients: [
                 'Oak_Planks.png', 'Oak_Planks.png', 'Oak_Planks.png',
                 'Oak_Planks.png', null, 'Oak_Planks.png',
@@ -435,13 +435,13 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 'bread',
-            title: 'Хлеб',
-            image: 'https://via.placeholder.com/64x64?text=Bread', // Placeholder
-            category: 'Еда',
-            description: 'Простой источник еды для восстановления голода.',
+            title: 'Хліб',
+            image: '3F3F_JE3_BE3.webp', // Використовуємо надане зображення
+            category: 'Їжа',
+            description: 'Просте джерело їжі для відновлення голоду.',
             ingredients: [
                 null, null, null,
-                'https://via.placeholder.com/64x64?text=Wheat', 'https://via.placeholder.com/64x64?text=Wheat', 'https://via.placeholder.com/64x64?text=Wheat',
+                'gettak.webp', 'gettak.webp', 'gettak.webp', // Використовуємо надане зображення
                 null, null, null
             ]
         }
@@ -454,7 +454,7 @@ document.addEventListener('DOMContentLoaded', () => {
         craftGridContainer.innerHTML = '';
 
         if (craftsToRender.length === 0) {
-            craftGridContainer.innerHTML = '<p class="no-results">Рецепты не найдены.</p>';
+            craftGridContainer.innerHTML = '<p class="no-results">Рецептів не знайдено.</p>';
             return;
         }
 
@@ -498,7 +498,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (craft.ingredients[i]) {
                     const img = document.createElement('img');
                     img.src = craft.ingredients[i];
-                    img.alt = `Ингредиент ${i + 1}`;
+                    img.alt = `Інгредієнт ${i + 1}`;
                     slot.appendChild(img);
                 }
                 craftingGridElement.appendChild(slot);
@@ -521,7 +521,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         currentCrafts = craftingRecipesData.filter(craft => {
             const matchesSearch = craft.title.toLowerCase().includes(searchTerm) ||
-                                  craft.description.toLowerCase().includes(searchTerm);
+                                 craft.description.toLowerCase().includes(searchTerm);
 
             const matchesCategory = selectedCategory === '' || craft.category === selectedCategory;
 
@@ -538,108 +538,76 @@ document.addEventListener('DOMContentLoaded', () => {
         craftCategoryFilter.addEventListener('change', applyCraftFilters);
     }
 
-    // Инициализация: если мы на странице crafting.html, отображаем рецепты
+    // Ініціалізація: якщо ми на сторінці crafting.html, відображаємо рецепти
     if (window.location.pathname.includes('crafting.html')) {
         renderCrafts(craftingRecipesData);
     }
 
-    // --- Модуль для Серверов ---
+    // --- Модуль для Серверів ---
     const serverGridContainer = document.getElementById('server-grid-container'); // Get the new container
 
-    // Sample Server Data (имитация данных с сервера)
+    // Sample Server Data (імітація даних з сервера)
     const serversData = [
         {
             id: 'hypixel',
             title: 'Hypixel Network',
             ip: 'mc.hypixel.net',
-            description: 'Один из самых крупных и популярных серверов мини-игр в мире Minecraft. Тысячи игроков ежедневно соревнуются в SkyWars, Bed Wars, Murder Mystery и многих других режимах.',
+            description: 'Один з найбільших і найпопулярніших серверів міні-ігор у світі Minecraft. Тисячі гравців щодня змагаються в SkyWars, Bed Wars, Murder Mystery та багатьох інших режимах.',
             version: '1.8 - 1.20+',
             website: 'https://hypixel.net/',
-            image: 'DdNypQdN_400x400.png' // Your provided image
+            image: 'DdNypQdN_400x400.png' // Ваше надане зображення
         },
         {
             id: 'mineplex',
             title: 'Mineplex',
             ip: 'us.mineplex.com',
-            description: 'Ещё один легендарный сервер мини-игр с огромным выбором режимов, включая Death Tag, Super Smash Mobs, Bridges и Clans. Отличный выбор для активного времяпровождения.',
+            description: 'Ще один легендарний сервер міні-ігор з величезним вибором режимів, включаючи Death Tag, Super Smash Mobs, Bridges та Clans. Чудовий вибір для активного проведення часу.',
             version: '1.8 - 1.20+',
             website: 'https://www.mineplex.com/',
-            image: 'images.png' // Your provided image
+            image: 'images.png' // Ваше надане зображення
         },
         {
             id: 'cs-money',
             title: 'CS.MONEY',
             ip: 'play.cs.money',
-            description: 'Сервер для любителей CS:GO со скинами и кейсами в Minecraft. Здесь вы можете открывать кейсы, получать скины и участвовать в уникальных мини-играх, вдохновленных CS:GO.',
+            description: 'Сервер для любителів CS:GO зі скінами та кейсами в Minecraft. Тут ви можете відкривати кейси, отримувати скіни та брати участь в унікальних міні-іграх, натхненних CS:GO.',
             version: '1.16 - 1.20+',
-            website: '#', // No specific website provided, keep '#' for placeholder or remove
-            image: 'maxresdefault.jpg' // Your provided image
+            website: '#', // Немає конкретного веб-сайту, залишаємо '#' як placeholder або видаляємо
+            image: 'maxresdefault.jpg' // Ваше надане зображення
         }
     ];
 
     function renderServers(serversToRender) {
-        if (!serverGridContainer) return; // Ensure the container exists
-        serverGridContainer.innerHTML = ''; // Clear existing content
+        if (!serverGridContainer) return;
+        serverGridContainer.innerHTML = '';
 
         if (serversToRender.length === 0) {
-            serverGridContainer.innerHTML = '<p class="no-results">Серверы не найдены.</p>';
+            serverGridContainer.innerHTML = '<p class="no-results">Серверів не знайдено.</p>';
             return;
         }
 
         serversToRender.forEach(server => {
             const serverCard = document.createElement('div');
             serverCard.classList.add('server-card');
-
-            // Construct the website link, disable if '#'
-            const websiteLinkHtml = server.website && server.website !== '#'
-                ? `<a href="${server.website}" target="_blank" class="visit-website-btn">Перейти на сайт</a>`
-                : `<a href="#" class="visit-website-btn disabled-link">Сайт не требуется</a>`;
+            serverCard.dataset.id = server.id;
 
             serverCard.innerHTML = `
-                <img src="${server.image}" alt="${server.title} Logo" class="server-logo">
-                <h3>${server.title}</h3>
-                <p>${server.description}</p>
-                <div class="server-info">
-                    <span>Версия: ${server.version}</span>
-                    <span class="ip-address" id="ip-${server.id}">${server.ip}</span>
+                <img src="${server.image}" alt="${server.title}">
+                <div class="server-card-content">
+                    <h3>${server.title}</h3>
+                    <p class="server-ip">IP: <span>${server.ip}</span></p>
+                    <p>${server.description}</p>
+                    <div class="server-card-meta">
+                        <span>Версія: ${server.version}</span>
+                    </div>
+                    ${server.website && server.website !== '#' ? `<a href="${server.website}" target="_blank" class="server-website-btn">Веб-сайт</a>` : ''}
                 </div>
-                <button class="copy-ip-btn" data-ip="${server.ip}">Копировать IP</button>
-                ${websiteLinkHtml}
             `;
             serverGridContainer.appendChild(serverCard);
         });
-        // Re-attach event listeners for new buttons after rendering
-        attachCopyIpListeners();
     }
 
-    // Function to handle copying IP, separated for reusability
-    async function handleCopyIp(event) {
-        const button = event.target;
-        const ipAddress = button.dataset.ip;
-
-        try {
-            await navigator.clipboard.writeText(ipAddress);
-            const originalText = button.textContent;
-            button.textContent = 'IP скопирован!';
-            setTimeout(() => {
-                button.textContent = originalText;
-            }, 2000);
-        } catch (err) {
-            console.error('Не удалось скопировать IP:', err);
-            alert('Ошибка при копировании IP. Попробуйте скопировать вручную: ' + ipAddress);
-        }
-    }
-
-    // Function to attach listeners to copy IP buttons
-    function attachCopyIpListeners() {
-        const copyIpButtons = document.querySelectorAll('.copy-ip-btn');
-        copyIpButtons.forEach(button => {
-            button.removeEventListener('click', handleCopyIp); // Remove existing to prevent duplicates
-            button.addEventListener('click', handleCopyIp);
-        });
-    }
-
-    // Initialization: if we are on the servers.html page, render the servers
+    // Ініціалізація: якщо ми на сторінці servers.html, відображаємо сервери
     if (window.location.pathname.includes('servers.html')) {
         renderServers(serversData);
     }
