@@ -376,72 +376,72 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 'wooden_pickaxe',
             title: 'Деревянная кирка',
-            image: 'https://i.imgur.com/wood_pickaxe.png', // Placeholder
+            image: 'https://via.placeholder.com/64x64?text=Wooden+Pickaxe', // Placeholder
             category: 'Инструменты',
             description: 'Ваш первый инструмент для добычи камня.',
             ingredients: [
-                'https://i.imgur.com/oak_planks.png', 'https://i.imgur.com/oak_planks.png', 'https://i.imgur.com/oak_planks.png',
-                null, 'https://i.imgur.com/stick.png', null,
-                null, 'https://i.imgur.com/stick.png', null
+                'Oak_Planks.png', 'Oak_Planks.png', 'Oak_Planks.png',
+                null, 'Палка_JE1_BE1.webp', null,
+                null, 'Палка_JE1_BE1.webp', null
             ]
         },
         {
             id: 'crafting_table',
             title: 'Верстак',
-            image: 'https://i.imgur.com/crafting_table.png', // Placeholder
+            image: 'https://via.placeholder.com/64x64?text=Crafting+Table', // Placeholder
             category: 'Блоки',
             description: 'Основной блок для создания большинства предметов.',
             ingredients: [
-                'https://i.imgur.com/oak_planks.png', 'https://i.imgur.com/oak_planks.png', null,
-                'https://i.imgur.com/oak_planks.png', 'https://i.imgur.com/oak_planks.png', null,
+                'Oak_Planks.png', 'Oak_Planks.png', null,
+                'Oak_Planks.png', 'Oak_Planks.png', null,
                 null, null, null
             ]
         },
         {
             id: 'furnace',
             title: 'Печь',
-            image: 'https://i.imgur.com/furnace.png', // Placeholder
+            image: 'https://via.placeholder.com/64x64?text=Furnace', // Placeholder
             category: 'Блоки',
             description: 'Используется для переплавки руды и готовки еды.',
             ingredients: [
-                'https://i.imgur.com/cobblestone.png', 'https://i.imgur.com/cobblestone.png', 'https://i.imgur.com/cobblestone.png',
-                'https://i.imgur.com/cobblestone.png', null, 'https://i.imgur.com/cobblestone.png',
-                'https://i.imgur.com/cobblestone.png', 'https://i.imgur.com/cobblestone.png', 'https://i.imgur.com/cobblestone.png'
+                '3F3F3F3F_JE3_BE2.webp', '3F3F3F3F_JE3_BE2.webp', '3F3F3F3F_JE3_BE2.webp',
+                '3F3F3F3F_JE3_BE2.webp', null, '3F3F3F3F_JE3_BE2.webp',
+                '3F3F3F3F_JE3_BE2.webp', '3F3F3F3F_JE3_BE2.webp', '3F3F3F3F_JE3_BE2.webp'
             ]
         },
         {
             id: 'stone_sword',
             title: 'Каменный меч',
-            image: 'https://i.imgur.com/stone_sword.png', // Placeholder
+            image: 'https://via.placeholder.com/64x64?text=Stone+Sword', // Placeholder
             category: 'Оружие',
             description: 'Улучшенное оружие для защиты от монстров.',
             ingredients: [
-                null, 'https://i.imgur.com/cobblestone.png', null,
-                null, 'https://i.imgur.com/cobblestone.png', null,
-                null, 'https://i.imgur.com/stick.png', null
+                null, '3F3F3F3F_JE3_BE2.webp', null,
+                null, '3F3F3F3F_JE3_BE2.webp', null,
+                null, 'Палка_JE1_BE1.webp', null
             ]
         },
         {
             id: 'chest',
             title: 'Сундук',
-            image: 'https://i.imgur.com/chest.png', // Placeholder
+            image: 'https://via.placeholder.com/64x64?text=Chest', // Placeholder
             category: 'Блоки',
             description: 'Для хранения ваших предметов.',
             ingredients: [
-                'https://i.imgur.com/oak_planks.png', 'https://i.imgur.com/oak_planks.png', 'https://i.imgur.com/oak_planks.png',
-                'https://i.imgur.com/oak_planks.png', null, 'https://i.imgur.com/oak_planks.png',
-                'https://i.imgur.com/oak_planks.png', 'https://i.imgur.com/oak_planks.png', 'https://i.imgur.com/oak_planks.png'
+                'Oak_Planks.png', 'Oak_Planks.png', 'Oak_Planks.png',
+                'Oak_Planks.png', null, 'Oak_Planks.png',
+                'Oak_Planks.png', 'Oak_Planks.png', 'Oak_Planks.png'
             ]
         },
         {
             id: 'bread',
             title: 'Хлеб',
-            image: 'https://i.imgur.com/bread.png', // Placeholder
+            image: 'https://via.placeholder.com/64x64?text=Bread', // Placeholder
             category: 'Еда',
             description: 'Простой источник еды для восстановления голода.',
             ingredients: [
                 null, null, null,
-                'https://i.imgur.com/wheat.png', 'https://i.imgur.com/wheat.png', 'https://i.imgur.com/wheat.png',
+                'https://via.placeholder.com/64x64?text=Wheat', 'https://via.placeholder.com/64x64?text=Wheat', 'https://via.placeholder.com/64x64?text=Wheat',
                 null, null, null
             ]
         }
