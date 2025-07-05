@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Universe | Сервера</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="foni-papik-pro-byeg-p-kartinki-mainkraft-logo-na-prozrachnom-fon-3.png" alt="Minecraft" height="30px" width="30px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="guides.html">Гайды</a></li>
+                <li><a href="crafting.html">Крафт</a></li>
+                <li><a href="mods.html">Моды</a></li>
+                <li><a href="servers.html">Сервера</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="servers-list">
+            <h2>Популярные Сервера Minecraft</h2>
+            <div class="server-grid">
+                <div class="server-card">
+                    <img src="https://i.imgur.com/hypixel_logo.png" alt="Hypixel Logo" class="server-logo">
+                    <h3>Hypixel Network</h3>
+                    <p>Один из самых крупных и популярных серверов мини-игр в мире Minecraft. Тысячи игроков ежедневно соревнуются в SkyWars, Bed Wars, Murder Mystery и многих других режимах.</p>
+                    <div class="server-info">
+                        <span>Версия: 1.8 - 1.20+</span>
+                        <span class="ip-address" id="ip-hypixel">mc.hypixel.net</span>
+                    </div>
+                    <button class="copy-ip-btn" data-ip="mc.hypixel.net">Копировать IP</button>
+                    <a href="https://hypixel.net/" target="_blank" class="visit-website-btn">Перейти на сайт</a>
+                </div>
+
+                <div class="server-card">
+                    <img src="https://i.imgur.com/mineplex_logo.png" alt="Mineplex Logo" class="server-logo">
+                    <h3>Mineplex</h3>
+                    <p>Ещё один легендарный сервер мини-игр с огромным выбором режимов, включая Death Tag, Super Smash Mobs, Bridges и Clans. Отличный выбор для активного времяпровождения.</p>
+                    <div class="server-info">
+                        <span>Версия: 1.8 - 1.20+</span>
+                        <span class="ip-address" id="ip-mineplex">us.mineplex.com</span>
+                    </div>
+                    <button class="copy-ip-btn" data-ip="us.mineplex.com">Копировать IP</button>
+                    <a href="https://www.mineplex.com/" target="_blank" class="visit-website-btn">Перейти на сайт</a>
+                </div>
+
+                <div class="server-card">
+                    <img src="https://i.imgur.com/vanilla_logo.png" alt="Vanilla Server Logo" class="server-logo">
+                    <h3>Vanilla Survival (Пример)</h3>
+                    <p>Классический сервер выживания (SMP) без лишних модификаций. Здесь вы можете строить, исследовать и выживать вместе с друзьями в чистом Minecraft. Отличное место для спокойной игры и творчества.</p>
+                    <div class="server-info">
+                        <span>Версия: 1.20.1</span>
+                        <span class="ip-address" id="ip-vanilla">play.yoursmp.com</span>
+                    </div>
+                    <button class="copy-ip-btn" data-ip="play.yoursmp.com">Копировать IP</button>
+                    <a href="#" target="_blank" class="visit-website-btn disabled-link">Сайт не требуется</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Minecraft Universe. Не официальный сайт Mojang.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
